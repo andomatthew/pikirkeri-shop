@@ -1,3 +1,6 @@
+import '../src/assets/scss/app.scss'
+import '../src/assets/scss/fonts.scss'
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
