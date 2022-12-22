@@ -1,32 +1,34 @@
 <template>
-  <v-carousel
-      cycle
-      interval="1000"
-      :show-arrows="false"
-      hide-delimiters
-      height="480"
-    >
-    <v-carousel-item 
-      v-for="product in products"
-      :src="product.image"
-    />
-  </v-carousel>
-
-  <v-row class="mt-0 mx-0">
-    <v-col 
-      cols="6"
-      v-for="category in categories"
-    >
-      <v-card
-        rounded="lg"
-        flat
-        color="deep-purple"
-        width="100%"
-        height="270"
-        :title="category"
-      ></v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <v-carousel
+        cycle
+        interval="1000"
+        :show-arrows="false"
+        hide-delimiters
+        height="480"
+      >
+      <v-carousel-item 
+        v-for="product in products"
+        :src="product.image"
+      />
+    </v-carousel>
+  
+    <v-row class="mt-0 mx-0">
+      <v-col 
+        cols="6"
+        v-for="category in categories"
+      >
+        <v-card
+          rounded="lg"
+          flat
+          color="deep-purple"
+          width="100%"
+          height="270"
+          :title="category"
+        ></v-card>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script setup>

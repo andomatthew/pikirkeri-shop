@@ -1,5 +1,7 @@
 <template>
-  Categories Page
+  <div>
+    Categories Page
+  </div>
 </template>
 
 <script setup>
