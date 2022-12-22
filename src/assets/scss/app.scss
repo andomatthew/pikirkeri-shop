@@ -15,15 +15,36 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#app {
+  background-color: #d1c4e9;
+}
+
+.v-bottom-navigation {
+  border-top: 1px solid lightgrey !important;
+  max-width: 480px !important;
+  left: unset !important;
+}
+
 .wrapper {
-  background-color: #EDE7F6;
-  height: 100vh;
-  width: 100vw;
+  width: 480px;
+  margin: 0 auto;
 
   &--content {
     background-color: #fff;
-    max-width: 599px;
-    margin: 0 auto;
+    max-width: 480px;
     height: inherit;
+    overflow-y: auto;
+    position: relative;
+  }
+}
+
+.topbar {
+  max-width: 480px !important;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid lightgrey;
+
+  &-height {
+    height: 72px;
   }
 }
