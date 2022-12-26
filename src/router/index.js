@@ -14,8 +14,13 @@ const routes = [
       title: 'Kategori',
     },
     path: '/categories',
-    name: 'CategoiesPage',
+    name: 'CategoriesPage',
     component: () => import('@/views/CategoriesPage/index.vue'),
+  },
+  {
+    path: '/:category',
+    name: 'Category',
+    component: () => import('@/views/CategoriesPage/CategoryPage.vue'),
   },
   {
     meta: {
@@ -40,6 +45,14 @@ const routes = [
     path: '/profile',
     name: 'ProfilePage',
     component: () => import('@/views/ProfilePage/index.vue'),
+  },
+  {
+    meta: {
+      title: 'Search',
+    },
+    path: '/search',
+    name: 'SearchPage',
+    component: () => import('@/views/SearchPage/index.vue'),
   },
 ]
 
