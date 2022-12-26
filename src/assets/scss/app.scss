@@ -39,13 +39,27 @@ input::-webkit-inner-spin-button {
 }
 
 .topbar {
-  max-width: 480px !important;
-  position: fixed;
-  z-index: 1;
-  border-bottom: 1px solid lightgrey;
+  
+  &-default,
+  &-search {
+    max-width: 480px !important;
+    position: fixed;
+    z-index: 1;
+    border-bottom: 1px solid lightgrey;
+  }
 
   &-height {
     height: 72px;
   }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease-out;
 }
 

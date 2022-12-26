@@ -1,12 +1,26 @@
 <template>
   <!--topbar-->
-  <v-container class="topbar bg-white">
+  <v-container class="topbar-default bg-white">
     <v-row no-gutters class="align-center">
-      <v-col>
+      <v-col class="d-flex align-center">
+        <v-btn
+          icon
+          size="x-small"
+          variant="text"
+          class="me-2"
+          @click="router.go(-1)"
+          v-if="route.name === 'Category'"
+          >
+          <v-icon>mdi-arrow-left</v-icon>
+        </v-btn>
         <h2>Pikirkeri</h2>
       </v-col>
       <v-col class="d-flex justify-end">
-        <v-btn icon variant="text" size="small">
+        <v-btn 
+          icon 
+          variant="text" 
+          size="small"
+          :to="{ name: 'SearchPage' }">
           <v-icon icon="mdi-magnify" size="24"></v-icon>
         </v-btn>
       </v-col>
@@ -17,7 +31,10 @@
 </template>
 
 <script setup>
+import { useRoute, useRouter } from 'vue-router';
 
+const route = useRoute()
+const router = useRouter()
 </script>
 
 <style lang="scss" scoped>
