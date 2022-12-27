@@ -31,25 +31,25 @@ export default defineConfig({
         display: 'standalone',
         icons: [
           {
-            "src": "src/assets/icons/manifest-icon-192.maskable.png",
+            "src": "/src/assets/icons/manifest-icon-192.maskable.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "src/assets/icons/manifest-icon-192.maskable.png",
+            "src": "/src/assets/icons/manifest-icon-192.maskable.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
           },
           {
-            "src": "src/assets/icons/manifest-icon-512.maskable.png",
+            "src": "/src/assets/icons/manifest-icon-512.maskable.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
           },
           {
-            "src": "src/assets/icons/manifest-icon-512.maskable.png",
+            "src": "/src/assets/icons/manifest-icon-512.maskable.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
