@@ -11,7 +11,7 @@
           @click="router.go(-1)"
           v-if="route.name === 'Category'"
           >
-          <v-icon>mdi-arrow-left</v-icon>
+          <v-icon icon="arrow_back"></v-icon>
         </v-btn>
         <h2>Pikirkeri</h2>
       </v-col>
@@ -21,7 +21,7 @@
           variant="text" 
           size="small"
           :to="{ name: 'SearchPage' }">
-          <v-icon icon="mdi-magnify" size="24"></v-icon>
+          <v-icon icon="search" size="24"></v-icon>
         </v-btn>
       </v-col>
     </v-row>

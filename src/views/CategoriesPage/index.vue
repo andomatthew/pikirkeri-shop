@@ -7,7 +7,7 @@
         <v-btn
           variant="plain"
           size="small"
-          append-icon="mdi-chevron-right"
+          append-icon="chevron_right"
           class="text-capitalize">
           Lihat Semua
         </v-btn>

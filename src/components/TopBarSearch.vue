@@ -7,13 +7,13 @@
           variant="text"
           size="xsmall"
           @click="toPrevPage">
-          <v-icon icon="mdi-arrow-left" size="22"/>
+          <v-icon icon="arrow_back" size="22"/>
         </v-btn>
       </v-col>
       <v-col cols="11">
         <v-text-field 
           variant="underlined"
-          prepend-inner-icon="mdi-magnify"
+          prepend-inner-icon="search"
           color="deep-purple"
           placeholder="Sedang cari apa bro & sist..."
           hide-details
