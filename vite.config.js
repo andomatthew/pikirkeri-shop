@@ -13,14 +13,25 @@ export default defineConfig({
       styles: {configFile: 'src/assets/scss/variables.scss'},
     }),
     VitePWA({
+      mode: 'production', //default is production
       devOptions: {
-        enabled: true,
+        enabled: false,
       },
       registerType: 'autoUpdate',
       injectRegister: 'auto',
+      strategies: 'generateSW', //default
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,vue,ttf,txt}'],
-        cleanupOutdatedCaches: true
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,json,ttf,txt}'],
+        cleanupOutdatedCaches: true,
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.origin === 'https://fakestoreapi.com',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'api-cache'
+            }
+          },
+        ]
       },
       manifest: {
         name: 'Pikirkeri Shop',
