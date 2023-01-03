@@ -15,10 +15,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-#app {
-  background-color: whitesmoke;
-}
-
 .v-bottom-navigation {
   border-top: 1px solid lightgrey !important;
   max-width: 480px !important;
@@ -28,6 +24,7 @@ input::-webkit-inner-spin-button {
 .wrapper {
   width: 480px;
   margin: 0 auto;
+  height: 100%;
 
   &--content {
     background-color: #fff;
