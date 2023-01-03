@@ -6,9 +6,7 @@
   height="250"
   color="deep-purple-lighten-4"
   >
-    <v-icon size="100" class="d-block mx-auto">
-      mdi-account-arrow-left-outline
-    </v-icon>
+    <v-icon size="100" class="d-block mx-auto" icon="login"></v-icon>
 
     <p class="text-body-2 text-center mt-3">
       <span class="font-weight-bold">Masuk</span> atau 

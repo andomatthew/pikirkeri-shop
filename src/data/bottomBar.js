@@ -2,7 +2,7 @@ const MENU = [
   {
     title: 'Home',
     value: 'home',
-    icon: 'mdi-home-silo-outline',
+    icon: 'home',
     props: {
       to: '/'
     }
@@ -10,7 +10,7 @@ const MENU = [
   {
     title: 'Kategori',
     value: 'categories',
-    icon: 'mdi-shape-outline',
+    icon: 'category',
     props: {
       to: '/categories'
     }
@@ -18,7 +18,7 @@ const MENU = [
   {
     title: 'Wishlist',
     value: 'wishlist',
-    icon: 'mdi-heart-outline',
+    icon: 'favorite',
     props: {
       to: '/wishlist'
     }
@@ -26,7 +26,7 @@ const MENU = [
   {
     title: 'Keranjang',
     value: 'cart',
-    icon: 'mdi-cart-outline',
+    icon: 'shopping_cart',
     props: {
       to: '/cart'
     }
@@ -34,7 +34,7 @@ const MENU = [
   {
     title: 'Profile',
     value: 'profile',
-    icon: 'mdi-account-outline',
+    icon: 'person',
     props: {
       to: '/profile'
     }
