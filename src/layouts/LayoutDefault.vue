@@ -1,14 +1,12 @@
 <template>
-  <v-app class="bg-purple-lighten-5">
-    <div class="wrapper bg-white">
-      <div class="wrapper-content">
-        <top-bar v-if="route.name !== 'SearchPage'" />
-        <top-bar-search v-if="route.name === 'SearchPage'" />
-        <v-main class="py-4">
-          <slot />
-        </v-main>
-        <bottom-navigation />
-      </div>
+  <v-app class="wrapper">
+    <div class="wrapper-content">
+      <top-bar v-if="route.name !== 'SearchPage'" />
+      <top-bar-search v-if="route.name === 'SearchPage'" />
+      <v-main class="py-4">
+        <slot />
+      </v-main>
+      <bottom-navigation />
     </div>
   </v-app>
 </template>
