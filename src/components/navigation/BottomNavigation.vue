@@ -4,6 +4,7 @@
       v-for="item in menu"
       :value="item.value"
       :to="item.props.to"
+      size="x-small"
     >
       <v-icon>{{ item.icon }}</v-icon>
       {{ item.title }}
